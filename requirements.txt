@@ -1,0 +1,11 @@
+# Pin exact versions with: pip freeze > requirements.txt
+torch
+torchvision
+ultralytics
+scikit-learn
+pandas
+numpy
+pillow
+openpyxl
+matplotlib
+pyyaml

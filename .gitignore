@@ -1,0 +1,26 @@
+# Data and images (access limited to the project team)
+data/**
+!data/**/
+!data/**/.gitkeep
+*.jpg
+*.jpeg
+*.png
+
+# Model weights and training outputs
+*.pt
+*.pth
+*.onnx
+runs/
+wandb/
+
+# Secrets and environment
+.env
+*.env
+.venv/
+venv/
+
+# Python and system files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
