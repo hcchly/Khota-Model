@@ -1,0 +1,56 @@
+{
+  "model_version": "v1-2026-11-21",
+  "det_conf": 0.12,
+  "high_threshold": 0.29,
+  "imgsz": 640,
+  "iou": 0.6,
+  "tta": true,
+  "det_input_max": 1280,
+  "classifiers": [
+    "classifier_1.pt",
+    "classifier_2.pt",
+    "classifier_3.pt",
+    "classifier_4.pt",
+    "classifier_5.pt",
+    "classifier_6.pt"
+  ],
+  "detectors": [
+    "detector_1.pt",
+    "detector_2.pt",
+    "detector_3.pt",
+    "detector_4.pt",
+    "detector_5.pt",
+    "detector_6.pt",
+    "detector_7.pt"
+  ],
+  "wbf_iou": 0.55,
+  "member_conf": 0.001,
+  "source": {
+    "detector_runs": [
+      "detector_v2/y26s640_s42",
+      "detector_v2/y26s640_s43",
+      "detector_v2/y26s640_s44",
+      "detector_v2/v8n640_s42",
+      "detector_v2/v8n640_s43",
+      "detector_v2/v8n640_s44",
+      "detector_v2/y26m640_s42"
+    ],
+    "detector_models": [
+      "yolo26s.pt",
+      "yolo26s.pt",
+      "yolo26s.pt",
+      "yolov8n.pt",
+      "yolov8n.pt",
+      "yolov8n.pt",
+      "yolo26m.pt"
+    ],
+    "classifier_runs": [
+      "r18_balanced_s42",
+      "r18_balanced_s43",
+      "r18_balanced_s44",
+      "r18_default_s42",
+      "r18_default_s43",
+      "r18_default_s44"
+    ]
+  }
+}
