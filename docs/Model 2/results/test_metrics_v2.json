@@ -1,0 +1,277 @@
+{
+  "split": "test",
+  "pipeline": {
+    "model_version": "v2-2026-11-22",
+    "det_conf": 0.15,
+    "high_threshold": 0.29,
+    "imgsz": 640,
+    "iou": 0.6,
+    "tta": true,
+    "det_input_max": 1280,
+    "classifiers": [
+      "classifier_1.pt",
+      "classifier_2.pt",
+      "classifier_3.pt",
+      "classifier_4.pt",
+      "classifier_5.pt",
+      "classifier_6.pt"
+    ],
+    "detectors": [
+      "detector_1.pt",
+      "detector_2.pt",
+      "detector_3.pt",
+      "detector_4.pt",
+      "detector_5.pt",
+      "detector_6.pt",
+      "detector_7.pt",
+      "detector_8.pth"
+    ],
+    "wbf_iou": 0.55,
+    "member_conf": 0.001,
+    "rfdetr": {
+      "detector_8.pth": {
+        "size": "medium",
+        "names": [
+          "Curb Ramp Issue",
+          "Surface Damage|LM",
+          "Surface Damage|HIGH"
+        ],
+        "flip": true,
+        "weight": 4,
+        "run": "rfdetr/med_c3_s42/checkpoint_best_ema.pth"
+      }
+    },
+    "source": {
+      "detector_runs": [
+        "detector_v2/y26s640_s42",
+        "detector_v2/y26s640_s43",
+        "detector_v2/y26s640_s44",
+        "detector_v2/v8n640_s42",
+        "detector_v2/v8n640_s43",
+        "detector_v2/v8n640_s44",
+        "detector_v2/y26m640_s42"
+      ],
+      "detector_models": [
+        "yolo26s.pt",
+        "yolo26s.pt",
+        "yolo26s.pt",
+        "yolov8n.pt",
+        "yolov8n.pt",
+        "yolov8n.pt",
+        "yolo26m.pt"
+      ],
+      "classifier_runs": [
+        "r18_balanced_s42",
+        "r18_balanced_s43",
+        "r18_balanced_s44",
+        "r18_default_s42",
+        "r18_default_s43",
+        "r18_default_s44"
+      ]
+    }
+  },
+  "detector_ap_by_iou": {
+    "Curb Ramp Issue": {
+      "n_labels": 23,
+      "AP@0.1": 0.6752393917009113,
+      "max_recall@0.1": 1.0,
+      "AP@0.3": 0.5802145535883619,
+      "max_recall@0.3": 1.0,
+      "AP@0.5": 0.5568620555772837,
+      "max_recall@0.5": 0.9565217391304348
+    },
+    "Surface Damage": {
+      "n_labels": 133,
+      "AP@0.1": 0.3947289152655206,
+      "max_recall@0.1": 1.0,
+      "AP@0.3": 0.31075039224206186,
+      "max_recall@0.3": 1.0,
+      "AP@0.5": 0.1926507730875571,
+      "max_recall@0.5": 0.9097744360902256
+    }
+  },
+  "detector": {
+    "split": "test",
+    "metric": "WBF ensemble of 8 detectors, own AP code",
+    "overall": {
+      "mAP50": 0.3747564143324204
+    },
+    "per_class": {
+      "Curb Ramp Issue": {
+        "mAP50": 0.5568620555772837,
+        "precision": 0.4375,
+        "recall": 0.6086956521739131,
+        "f1": 0.5090909090909091
+      },
+      "Surface Damage": {
+        "mAP50": 0.1926507730875571,
+        "precision": 0.25196850393700787,
+        "recall": 0.24060150375939848,
+        "f1": 0.24615384615384614
+      }
+    },
+    "at_deployed_conf": {
+      "conf": 0.15,
+      "mean_f1": 0.37762237762237766
+    }
+  },
+  "classifier": {
+    "at_threshold": {
+      "accuracy": 0.8589743589743589,
+      "macro_f1": 0.7606026785714286,
+      "f1_lm": 0.9140625,
+      "f1_high": 0.6071428571428571,
+      "high_recall": 0.7083333333333334,
+      "high_precision": 0.53125,
+      "confusion_matrix": [
+        [
+          117,
+          15
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "threshold": 0.29,
+      "n": 156,
+      "n_high": 24
+    },
+    "at_0.5": {
+      "accuracy": 0.9102564102564102,
+      "macro_f1": 0.8215102974828374,
+      "f1_lm": 0.9473684210526315,
+      "f1_high": 0.6956521739130435,
+      "high_recall": 0.6666666666666666,
+      "high_precision": 0.7272727272727273,
+      "confusion_matrix": [
+        [
+          126,
+          6
+        ],
+        [
+          8,
+          16
+        ]
+      ],
+      "threshold": 0.5,
+      "n": 156,
+      "n_high": 24
+    },
+    "majority_baseline": {
+      "accuracy": 0.8461538461538461,
+      "macro_f1": 0.4583333333333333,
+      "f1_lm": 0.9166666666666666,
+      "f1_high": 0.0,
+      "high_recall": 0.0,
+      "high_precision": 0.0,
+      "confusion_matrix": [
+        [
+          132,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "threshold": 0.5,
+      "n": 156,
+      "n_high": 24
+    },
+    "n": 156,
+    "n_high": 24
+  },
+  "end_to_end": {
+    "images": 103,
+    "labelled_boxes": 156,
+    "detections": 170,
+    "detections_matching_a_label_iou50": 50,
+    "severity_accuracy_on_matched": 0.8,
+    "severity_metrics_on_matched": {
+      "accuracy": 0.8,
+      "macro_f1": 0.7258771929824561,
+      "f1_lm": 0.868421052631579,
+      "f1_high": 0.5833333333333334,
+      "high_recall": 0.5833333333333334,
+      "high_precision": 0.5833333333333334,
+      "confusion_matrix": [
+        [
+          33,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "threshold": 0.29,
+      "n": 50,
+      "n_high": 12
+    },
+    "photo_level": {
+      "photos_with_defect": 71,
+      "flagged": 63,
+      "photos_without_defect": 32,
+      "false_alarm": 7,
+      "flag_rate_on_defect_photos": 0.8873239436619719,
+      "false_alarm_rate_on_no_defect_photos": 0.21875
+    },
+    "localisation_tolerant_at_deployed_conf": {
+      "Curb Ramp Issue": {
+        "IoU>=0.1": {
+          "recall": 0.7391304347826086,
+          "precision": 0.5588235294117647
+        },
+        "IoU>=0.3": {
+          "recall": 0.6521739130434783,
+          "precision": 0.5
+        },
+        "IoU>=0.5": {
+          "recall": 0.6521739130434783,
+          "precision": 0.47058823529411764
+        }
+      },
+      "Surface Damage": {
+        "IoU>=0.1": {
+          "recall": 0.42105263157894735,
+          "precision": 0.5441176470588235
+        },
+        "IoU>=0.3": {
+          "recall": 0.3383458646616541,
+          "precision": 0.38235294117647056
+        },
+        "IoU>=0.5": {
+          "recall": 0.2631578947368421,
+          "precision": 0.25735294117647056
+        }
+      }
+    },
+    "detector_recall_by_severity_at_deployed_conf": {
+      "Curb Ramp Issue / HIGH": {
+        "IoU>=0.1": 0.6,
+        "IoU>=0.3": 0.4,
+        "IoU>=0.5": 0.4,
+        "n": 5
+      },
+      "Curb Ramp Issue / LM": {
+        "IoU>=0.1": 0.7777777777777778,
+        "IoU>=0.3": 0.7222222222222222,
+        "IoU>=0.5": 0.7222222222222222,
+        "n": 18
+      },
+      "Surface Damage / HIGH": {
+        "IoU>=0.1": 0.7894736842105263,
+        "IoU>=0.3": 0.631578947368421,
+        "IoU>=0.5": 0.5263157894736842,
+        "n": 19
+      },
+      "Surface Damage / LM": {
+        "IoU>=0.1": 0.35964912280701755,
+        "IoU>=0.3": 0.2894736842105263,
+        "IoU>=0.5": 0.21929824561403508,
+        "n": 114
+      }
+    }
+  }
+}
