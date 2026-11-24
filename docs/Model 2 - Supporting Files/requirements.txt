@@ -1,0 +1,19 @@
+# Khota — training and evaluation environment (tested: Python 3.11, Windows 11, NVIDIA RTX 3070 8 GB, CUDA 12.4)
+# 1) PyTorch first:
+#    pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+# 2) Then: pip install -r requirements.txt
+# The app server needs less: inference/requirements.txt
+ultralytics==8.4.84
+rfdetr[train]==1.12.1
+numpy==2.4.6
+pillow==13.0.0
+opencv-python==5.0.0.93
+scipy==1.17.1
+scikit-learn==1.9.1
+pandas==3.1.1
+matplotlib==3.11.2
+openpyxl==3.1.5
+pyyaml==6.0.3
+fastapi==0.163.1
+uvicorn==0.54.0
+python-multipart==0.0.33

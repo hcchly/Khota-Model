@@ -1,0 +1,31 @@
+{
+  "model_version": "v2-2026-11-22",
+  "device": "cpu",
+  "photos_timed": 20,
+  "split": "val",
+  "seconds_per_photo": {
+    "mean": 1.8801104299898725,
+    "median": 1.807519250025507,
+    "min": 1.3661828000331298,
+    "max": 2.805786699987948
+  },
+  "defects_per_photo_mean": 3,
+  "model_load_seconds": 4.524482499924488,
+  "memory_mb": {
+    "process_before_load": 460.30859375,
+    "after_loading_models": 1347.00390625,
+    "peak_during_inference": 1692.984375
+  },
+  "machine": {
+    "cpu": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "torch_threads": 8,
+    "ram_gb": 31.85478973388672,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.0",
+    "torch": "2.6.0+cu124",
+    "gpu": null
+  },
+  "photo_size_px": "original photos (typically 4032 x 3024), as sent by the app"
+}

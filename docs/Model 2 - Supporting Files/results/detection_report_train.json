@@ -1,0 +1,70 @@
+{
+  "split": "train",
+  "model_version": "v2-2026-11-22",
+  "det_conf": 0.15,
+  "ap_by_iou": {
+    "Curb Ramp Issue": {
+      "n_labels": 112,
+      "AP@0.1": 0.9351587069683075,
+      "max_recall@0.1": 1.0,
+      "AP@0.3": 0.9350497745064338,
+      "max_recall@0.3": 1.0,
+      "AP@0.5": 0.9340182716660138,
+      "max_recall@0.5": 1.0
+    },
+    "Surface Damage": {
+      "n_labels": 620,
+      "AP@0.1": 0.8292960556955142,
+      "max_recall@0.1": 1.0,
+      "AP@0.3": 0.786878214182458,
+      "max_recall@0.3": 1.0,
+      "AP@0.5": 0.7559731576423185,
+      "max_recall@0.5": 0.9919354838709677
+    }
+  },
+  "mAP50": 0.8449957146541662,
+  "mAP10": 0.8822273813319108,
+  "operating_point": {
+    "Curb Ramp Issue": {
+      "conf": 0.15,
+      "precision": 0.6235294117647059,
+      "recall": 0.9464285714285714
+    },
+    "Surface Damage": {
+      "conf": 0.15,
+      "precision": 0.5768772348033373,
+      "recall": 0.7806451612903226
+    }
+  },
+  "confusion_matrix": {
+    "rows_label": [
+      "Curb Ramp Issue",
+      "Surface Damage",
+      "background"
+    ],
+    "cols_predicted": [
+      "Curb Ramp Issue",
+      "Surface Damage",
+      "background"
+    ],
+    "iou": 0.5,
+    "det_conf": 0.15,
+    "matrix": [
+      [
+        106,
+        0,
+        6
+      ],
+      [
+        1,
+        484,
+        135
+      ],
+      [
+        63,
+        355,
+        0
+      ]
+    ]
+  }
+}

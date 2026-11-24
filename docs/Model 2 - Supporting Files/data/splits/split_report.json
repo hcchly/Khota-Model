@@ -1,0 +1,251 @@
+{
+  "split_method": {
+    "link_m": 200.0,
+    "seed": 42,
+    "trials": 20000,
+    "n_groups": 183,
+    "largest_group_images": 45,
+    "min_cross_split_distance_m": 201.2,
+    "note": "frozen location split (data/splits/split.csv); photos within link_m metres of each other are always in the same split"
+  },
+  "labels": "final labels (data/annotations/boxes_final.csv): requester labels + all 160 logged changes, 22 Nov 2026",
+  "per_split": {
+    "train": {
+      "photos": 482,
+      "photos_with_defect": 345,
+      "photos_without_defect": 137,
+      "location_groups": 112,
+      "boxes": 732,
+      "boxes_by_class": {
+        "Curb Ramp Issue": 112,
+        "Surface Damage": 620
+      },
+      "boxes_by_severity": {
+        "High": 143,
+        "Low-Medium": 589
+      },
+      "boxes_by_class_and_severity": {
+        "Curb Ramp Issue": {
+          "High": 28,
+          "Low-Medium": 84
+        },
+        "Surface Damage": {
+          "High": 115,
+          "Low-Medium": 505
+        }
+      }
+    },
+    "val": {
+      "photos": 104,
+      "photos_with_defect": 77,
+      "photos_without_defect": 27,
+      "location_groups": 43,
+      "boxes": 147,
+      "boxes_by_class": {
+        "Curb Ramp Issue": 27,
+        "Surface Damage": 120
+      },
+      "boxes_by_severity": {
+        "High": 26,
+        "Low-Medium": 121
+      },
+      "boxes_by_class_and_severity": {
+        "Curb Ramp Issue": {
+          "High": 6,
+          "Low-Medium": 21
+        },
+        "Surface Damage": {
+          "High": 20,
+          "Low-Medium": 100
+        }
+      }
+    },
+    "test": {
+      "photos": 103,
+      "photos_with_defect": 71,
+      "photos_without_defect": 32,
+      "location_groups": 28,
+      "boxes": 156,
+      "boxes_by_class": {
+        "Curb Ramp Issue": 23,
+        "Surface Damage": 133
+      },
+      "boxes_by_severity": {
+        "High": 24,
+        "Low-Medium": 132
+      },
+      "boxes_by_class_and_severity": {
+        "Curb Ramp Issue": {
+          "High": 5,
+          "Low-Medium": 18
+        },
+        "Surface Damage": {
+          "High": 19,
+          "Low-Medium": 114
+        }
+      }
+    },
+    "total": {
+      "photos": 689,
+      "photos_with_defect": 493,
+      "photos_without_defect": 196,
+      "location_groups": 183,
+      "boxes": 1035,
+      "boxes_by_class": {
+        "Curb Ramp Issue": 162,
+        "Surface Damage": 873
+      },
+      "boxes_by_severity": {
+        "High": 193,
+        "Low-Medium": 842
+      },
+      "boxes_by_class_and_severity": {
+        "Curb Ramp Issue": {
+          "High": 39,
+          "Low-Medium": 123
+        },
+        "Surface Damage": {
+          "High": 154,
+          "Low-Medium": 719
+        }
+      }
+    }
+  },
+  "label_versions": {
+    "final_2026-11-22": "per_split above (160 logged changes)",
+    "reviewed_2026-11-18": {
+      "note": "requester labels + the first 111 logged changes; the final labels with the 49 relabelling changes of 22 Nov undone",
+      "per_split": {
+        "train": {
+          "photos": 482,
+          "photos_with_defect": 346,
+          "photos_without_defect": 136,
+          "location_groups": 112,
+          "boxes": 739,
+          "boxes_by_class": {
+            "Curb Ramp Issue": 114,
+            "Surface Damage": 625
+          },
+          "boxes_by_severity": {
+            "High": 142,
+            "Low-Medium": 597
+          },
+          "boxes_by_class_and_severity": {
+            "Curb Ramp Issue": {
+              "High": 29,
+              "Low-Medium": 85
+            },
+            "Surface Damage": {
+              "High": 113,
+              "Low-Medium": 512
+            }
+          }
+        },
+        "val": {
+          "photos": 104,
+          "photos_with_defect": 77,
+          "photos_without_defect": 27,
+          "location_groups": 43,
+          "boxes": 148,
+          "boxes_by_class": {
+            "Curb Ramp Issue": 27,
+            "Surface Damage": 121
+          },
+          "boxes_by_severity": {
+            "High": 26,
+            "Low-Medium": 122
+          },
+          "boxes_by_class_and_severity": {
+            "Curb Ramp Issue": {
+              "High": 6,
+              "Low-Medium": 21
+            },
+            "Surface Damage": {
+              "High": 20,
+              "Low-Medium": 101
+            }
+          }
+        },
+        "test": {
+          "photos": 103,
+          "photos_with_defect": 71,
+          "photos_without_defect": 32,
+          "location_groups": 28,
+          "boxes": 157,
+          "boxes_by_class": {
+            "Curb Ramp Issue": 23,
+            "Surface Damage": 134
+          },
+          "boxes_by_severity": {
+            "High": 24,
+            "Low-Medium": 133
+          },
+          "boxes_by_class_and_severity": {
+            "Curb Ramp Issue": {
+              "High": 5,
+              "Low-Medium": 18
+            },
+            "Surface Damage": {
+              "High": 19,
+              "Low-Medium": 115
+            }
+          }
+        },
+        "total": {
+          "photos": 689,
+          "photos_with_defect": 494,
+          "photos_without_defect": 195,
+          "location_groups": 183,
+          "boxes": 1044,
+          "boxes_by_class": {
+            "Curb Ramp Issue": 164,
+            "Surface Damage": 880
+          },
+          "boxes_by_severity": {
+            "High": 192,
+            "Low-Medium": 852
+          },
+          "boxes_by_class_and_severity": {
+            "Curb Ramp Issue": {
+              "High": 40,
+              "Low-Medium": 124
+            },
+            "Surface Damage": {
+              "High": 152,
+              "Low-Medium": 728
+            }
+          }
+        }
+      }
+    },
+    "original_as_delivered": {
+      "note": "labels as delivered (first split report, 15 Nov 2026)",
+      "per_split": {
+        "train": {
+          "boxes": 713,
+          "high": 109,
+          "curb_ramp": 111,
+          "photos_without_defect": 135
+        },
+        "val": {
+          "boxes": 143,
+          "high": 24,
+          "curb_ramp": 26,
+          "photos_without_defect": 27
+        },
+        "test": {
+          "boxes": 154,
+          "high": 22,
+          "curb_ramp": 23,
+          "photos_without_defect": 32
+        },
+        "total": {
+          "boxes": 1010,
+          "high": 155,
+          "curb_ramp": 160,
+          "photos_without_defect": 194
+        }
+      }
+    }
+  }
+}

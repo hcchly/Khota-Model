@@ -1,0 +1,161 @@
+change_id,image_id,box,type,old,new,rubric_codes,source,note,provider_to_confirm
+C001,RYD-0067,B08,delete,SD LM,deleted,,box review,"thin box on a tile joint, no defect",no
+C002,RYD-0099,B03,delete,SD LM,deleted,,box review,"box on intact paving, no visible defect",no
+C003,RYD-0228,B01,delete,SD HIGH,deleted,,box review,"sandy road median, not a sidewalk surface",no
+C004,RYD-0299,B01,delete,SD LM,deleted,,box review,intact pavers on a traffic island,no
+C005,RYD-0359,B02,delete,SD LM,deleted,,box review,"curb face joint/stain, no defect",no
+C006,RYD-0479,B01,delete,SD LM,deleted,,box review,"vertical curb joint, no defect",no
+C007,RYD-0479,B04,delete,SD LM,deleted,,box review,"vertical curb joint, no defect",no
+C008,RYD-0102,B03,add,no box,SD HIGH,SD-H1,box review,unlabelled defect: hole with debris where paving is missing,yes
+C009,RYD-0172,B02,add,no box,SD HIGH,SD-H2,box review,"unlabelled defect: broken paver edge piece displaced, abrupt edge",yes
+C010,RYD-0294,B04,add,no box,SD LM,SD-NS2,box review,unlabelled defect: cracked/broken pavers at bollard base,yes
+C011,RYD-0424,B02,add,no box,SD HIGH,SD-H2,box review,unlabelled defect: fragmented paving with missing pieces,yes
+C012,RYD-0454,B02,add,no box,CR HIGH,CR-H1,box review,"unlabelled defect: broken ramp edge, missing pieces",yes
+C013,RYD-0455,B02,add,no box,CR HIGH,CR-H1,box review,"unlabelled defect: broken ramp, missing pieces",yes
+C014,RYD-0458,B02,add,no box,CR HIGH,CR-H1,box review,unlabelled defect: fragmented ramp slab,yes
+C015,RYD-0004,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.43), confirmed visually",no
+C016,RYD-0030,B04,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.40), confirmed visually",no
+C017,RYD-0037,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.44), confirmed visually",no
+C018,RYD-0077,B04,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.35), confirmed visually",no
+C019,RYD-0083,B03,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.48), confirmed visually",no
+C020,RYD-0084,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.46), confirmed visually",no
+C021,RYD-0085,B02,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.56), confirmed visually",no
+C022,RYD-0088,B05,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.52), confirmed visually",no
+C023,RYD-0091,B05,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.50), confirmed visually",no
+C024,RYD-0110,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.41), confirmed visually",no
+C025,RYD-0112,B02,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.49), confirmed visually",no
+C026,RYD-0113,B03,add,no box,SD HIGH,SD-H2,detector audit + visual check,"unlabelled broken paving with missing pieces found by the out-of-fold detector (conf 0.37), confirmed visually",yes
+C027,RYD-0144,B05,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.78), confirmed visually",no
+C028,RYD-0182,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.41), confirmed visually",no
+C029,RYD-0182,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.36), confirmed visually",no
+C030,RYD-0211,B02,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.54), confirmed visually",no
+C031,RYD-0248,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.94), confirmed visually",no
+C032,RYD-0248,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.66), confirmed visually",no
+C033,RYD-0248,B04,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.65), confirmed visually",no
+C034,RYD-0251,B02,add,no box,SD HIGH,SD-H2,detector audit + visual check,"unlabelled broken paving with missing pieces found by the out-of-fold detector (conf 0.48), confirmed visually",yes
+C035,RYD-0258,B04,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.59), confirmed visually",no
+C036,RYD-0259,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.56), confirmed visually",no
+C037,RYD-0286,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.47), confirmed visually",no
+C038,RYD-0498,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.45), confirmed visually",no
+C039,RYD-0517,B01,add,no box,CR LM,CR-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.69), confirmed visually",no
+C040,RYD-0535,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.72), confirmed visually",no
+C041,RYD-0535,B03,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.46), confirmed visually",no
+C042,RYD-0535,B04,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.44), confirmed visually",no
+C043,RYD-0571,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.50), confirmed visually",no
+C044,RYD-0581,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.39), confirmed visually",no
+C045,RYD-0613,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.45), confirmed visually",no
+C046,RYD-0645,B02,add,no box,SD HIGH,SD-H1,detector audit + visual check,"unlabelled broken paving with missing pieces found by the out-of-fold detector (conf 0.47), confirmed visually",yes
+C047,RYD-0727,B02,add,no box,SD LM,SD-NS2,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.37), confirmed visually",no
+C048,RYD-0731,B02,add,no box,SD LM,SD-NS1,detector audit + visual check,"unlabelled crack/damage found by the out-of-fold detector (conf 0.50), confirmed visually",no
+C049,RYD-0093,B02,severity,HIGH,LM,SD-NS1,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; tile surface intact apart from wear,no
+C050,RYD-0093,B03,severity,HIGH,LM,SD-NS2,severity review (all-High images),"multi-box image all labelled High: only part of the boxes meet a High criterion; chipped curb edge, nothing missing",no
+C051,RYD-0093,B04,severity,HIGH,LM,SD-NS1,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; curb edge wear,no
+C052,RYD-0096,B03,severity,HIGH,LM,SD-NS2,severity review (all-High images),"multi-box image all labelled High: only part of the boxes meet a High criterion; cracked tile, no missing piece",no
+C053,RYD-0096,B04,severity,HIGH,LM,SD-NS2,severity review (all-High images),"multi-box image all labelled High: only part of the boxes meet a High criterion; cracked tile at curb, small chip",no
+C054,RYD-0708,B02,severity,HIGH,LM,SD-NS2,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; cracked tile edge,no
+C055,RYD-0710,B02,severity,HIGH,LM,SD-NS2,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; patching around pole base,no
+C056,RYD-0715,B02,severity,HIGH,LM,SD-NS1,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; crack across paving,no
+C057,RYD-0718,B02,severity,HIGH,LM,SD-NS1,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; surface crazing cracks,no
+C058,RYD-0720,B02,severity,HIGH,LM,SD-NS2,severity review (all-High images),multi-box image all labelled High: only part of the boxes meet a High criterion; crack/separation along curb,no
+C059,RYD-0209,B01,severity,HIGH,LM,SD-NS2,severity review (all-High images),"multi-box image all labelled High: only part of the boxes meet a High criterion; shifted tile pieces, distant/small",yes
+C060,RYD-0097,B03,severity,LM,HIGH,SD-H1,severity review (second look),open cavity where paving is missing,no
+C061,RYD-0141,B02,severity,LM,HIGH,SD-H2,severity review (second look),tile fragmented with missing pieces,no
+C062,RYD-0145,B02,severity,LM,HIGH,SD-H1,severity review (second look),"gap in paving at curb, soil exposed",no
+C063,RYD-0180,B01,severity,LM,HIGH,SD-H2,severity review (second look),"broken paver with missing piece, open gap",no
+C064,RYD-0180,B02,severity,LM,HIGH,SD-H1,severity review (second look),"paver missing, bedding exposed",no
+C065,RYD-0251,B01,severity,LM,HIGH,SD-H1,severity review (second look),"hole from missing paving, open cavity",no
+C066,RYD-0294,B01,severity,LM,HIGH,SD-H1,severity review (second look),"pavers missing, sand exposed",no
+C067,RYD-0385,B01,severity,LM,HIGH,SD-H2,severity review (second look),edge fragmented with missing pieces,no
+C068,RYD-0551,B01,severity,LM,HIGH,SD-H1,severity review (second look),"paving missing, underlying layer exposed",no
+C069,RYD-0697,B01,severity,HIGH,LM,CR-NS1,severity review (second look),"crack only, no missing piece or open gap",no
+C070,RYD-0010,B02,severity,UNDECIDED,HIGH,SD-H1,severity review (undecided),no severity in the delivered Excel,yes
+C071,RYD-0045,B01,severity,UNDECIDED,HIGH,SD-H1,severity review (undecided),no severity in the delivered Excel,yes
+C072,RYD-0045,B02,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C073,RYD-0045,B03,severity,UNDECIDED,LM,SD-NS2,severity review (undecided),no severity in the delivered Excel,yes
+C074,RYD-0045,B04,severity,UNDECIDED,HIGH,SD-H1,severity review (undecided),no severity in the delivered Excel,yes
+C075,RYD-0045,B05,severity,UNDECIDED,HIGH,SD-H1,severity review (undecided),no severity in the delivered Excel,yes
+C076,RYD-0045,B06,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C077,RYD-0045,B07,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C078,RYD-0045,B08,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C079,RYD-0045,B09,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C080,RYD-0045,B10,severity,UNDECIDED,LM,SD-NS1,severity review (undecided),no severity in the delivered Excel,yes
+C081,RYD-0259,B02,severity,UNDECIDED,LM,SD-NS2,severity review (undecided),no severity in the delivered Excel,yes
+C082,RYD-0472,B03,severity,UNDECIDED,HIGH,SD-H1,severity review (undecided),no severity in the delivered Excel,yes
+C083,RYD-0585,B02,severity,UNDECIDED,HIGH,SD-H2,severity review (undecided),no severity in the delivered Excel,yes
+C084,RYD-0084,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"curb-edge stones missing/displaced, open cavity with soil/sand and debris exposed (same pattern as RYD-0013/0014 calibration)",yes
+C085,RYD-0085,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"same defect as RYD-0084 B01: curb-edge stones missing/displaced, open cavity with soil/sand exposed",yes
+C086,RYD-0087,B03,severity,LM,HIGH,SD-H1,rubric review (clear),"tile section missing next to displaced/gapped curb stones, soil exposed on the walkway side (cf. calibration RYD-0019 B01)",yes
+C087,RYD-0091,B02,severity,LM,HIGH,SD-H1,rubric review (clear),"curb-corner section missing, tile edge undercut, open cavity with soil and loose fragment (cf. calibration RYD-0006 B01 / RYD-0013 B01)",yes
+C088,RYD-0100,B01,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"wide open gap along the slab line with soil exposed; at the bottom, fragmented pieces missing with soil/debris cavity",yes
+C089,RYD-0102,B01,severity,LM,HIGH,SD-H1,rubric review (clear),paving missing over ~1 tile area; thick broken paving edges visible and loose gravel/sand bedding exposed with loose fragments (not surface peeling) -> SD-H1,yes
+C090,RYD-0141,B01,severity,LM,HIGH,SD-H2;SD-H1,rubric review (clear),slabs at curb corner fragmented with pieces clearly missing; sandy bedding and debris exposed in the open gaps between fragments,yes
+C091,RYD-0155,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"pavers missing between paver field and curb (left part of box), sand bedding exposed; same pattern as calibration RYD-0019 -> High",yes
+C092,RYD-0182,B01,severity,LM,HIGH,SD-H2;SD-H1,rubric review (clear),slab broken and tilted up along the wall/step side leaving an open dark cavity beneath; strip next to wall recessed; broken slab displaced with open gap and abrupt exposed edge (in shade but visible),yes
+C093,RYD-0248,B01,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"paver dislodged and sunk into a hole; open cavity with dark soil/bedding exposed between pavers, full paver thickness exposed at the adjacent edges",yes
+C094,RYD-0263,B01,severity,LM,HIGH,SD-H1,rubric review (clear),interlocking pavers along the diagonal edging strip are displaced/missing with sand bedding clearly exposed in open gaps (around x 0.31-0.40 and 0.55-0.70); left third of the box is sound paving but t,yes
+C095,RYD-0266,B01,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"several pavers missing/broken and displaced, sand/soil bedding exposed over a large area in the centre of the box; open gaps and fragments. Consistent with RYD-0267 B01 (HIGH), likely the same locatio",yes
+C096,RYD-0266,B02,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"crushed paver fragments lying loose in exposed soil; paving clearly missing, so it no longer holds together",yes
+C097,RYD-0275,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"lower part of the tiled sloped surface is broken off, tiles clearly missing, soil and rubble exposed across most of the width. I kept the requester's CR class; if this surface is treated as sidewalk the ",yes
+C098,RYD-0319,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"paver piece missing next to the planter border, open gap with soil/bedding exposed and loose broken fragments in it",yes
+C099,RYD-0408,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"sloped concrete ramp between tiled sidewalk and unpaved road: lower edge broken with undercut, abrupt exposed edge; central section missing with soil/debris-filled cavity; right part fragmented. Match",yes
+C100,RYD-0409,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"same ramp as RYD-0408 B01: broken lower edge with undercut gap / abrupt exposed edge; left part fragmented with missing pieces and debris. Propose HIGH, consistent with RYD-0408/0411",yes
+C101,RYD-0411,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"same ramp as RYD-0408 B01 / RYD-0409 B01: broken lower edge with gap and missing concrete in the middle. Propose HIGH, consistent across the three photos",yes
+C102,RYD-0474,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"cement ramp at door: left part fragmented into broken blocks with an open dark cavity, a broken slab piece displaced at the lower edge; fragmentation with clearly missing pieces",yes
+C103,RYD-0503,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"the lower edge of the sloped ramp is fragmented: loose chunks and rubble, open voids and clearly missing concrete along the left half, open cracks along the rest. This matches the rubric's CR-H1 refer",yes
+C104,RYD-0540,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"rectangular section of paving missing, deep open cavity in the walking surface (possibly an uncovered pit) - LM contradicts SD-H1",yes
+C105,RYD-0559,B01,severity,HIGH,LM,CR-NS1,rubric review (clear),"Small rough concrete wedge ramp against the curb. It shows exposed aggregate (surface wear) and one hairline crack. There are no missing pieces, no open gap and no displaced piece, so no CR-H criterio",yes
+C106,RYD-0597,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"garage/driveway ramp: lower road-side edge fragmented over ~0.05-0.45 width, loose broken pieces lying in place, edge material missing exposing gravel/soil beneath; current LM violates CR-H1",yes
+C107,RYD-0671,B01,severity,LM,HIGH,SD-H1,rubric review (clear),hexagonal paver(s) missing at top of box with sand bedding exposed; adjacent concrete edge band broken with dirt-filled depression. Missing paver + exposed sand = SD-H1,yes
+C108,RYD-0677,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"several pavers missing in the walking surface, irregular hole with soil exposed and weeds growing; not a designed planting basin. Same pattern as calibration RYD-0019/RYD-0006 B02",yes
+C109,RYD-0680,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"smooth concrete edge band of the sidewalk lost along the planting-area edge, crumbling porous aggregate/bedding exposed at a lower level; matches calibration RYD-0013/RYD-0014 B01 (missing edge sectio",yes
+C110,RYD-0689,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"garage ramp: lower-left side edge fragmented into several displaced pieces with an open cavity (debris/leaves) and abrupt exposed edges (x~0.07-0.35, y~0.53-0.70, confirmed on original); rest is cemen",yes
+C111,RYD-0702,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"lower-left corner of driveway ramp (x about 0.14-0.28, y about 0.63-0.71): about 1.5 tiles broken and missing, fragments loose, mortar bed/gravel base exposed",yes
+C112,RYD-0417,B01,class,CR,SD,,"relabel in Roboflow (khota-reviewed, sd-done)",class changed in relabelling,no
+C113,RYD-0544,B01,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C114,RYD-0552,B03,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C115,RYD-0558,B03,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C116,RYD-0558,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C117,RYD-0559,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C118,RYD-0559,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C119,RYD-0559,B03,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C120,RYD-0586,B01,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C121,RYD-0601,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C122,RYD-0604,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C123,RYD-0605,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C124,RYD-0606,B01,class,CR,SD,,"relabel in Roboflow (khota-reviewed, sd-done)",class changed in relabelling,no
+C125,RYD-0606,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C126,RYD-0607,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C127,RYD-0609,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C128,RYD-0610,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C129,RYD-0610,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C130,RYD-0616,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C131,RYD-0618,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C132,RYD-0620,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C133,RYD-0621,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C134,RYD-0636,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C135,RYD-0645,B02,severity,HIGH,LM,,"relabel in Roboflow (khota-reviewed, sd-done)",severity changed in relabelling,no
+C136,RYD-0645,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C137,RYD-0645,B01,severity,LM,HIGH,,"relabel in Roboflow (khota-reviewed, sd-done)",severity changed in relabelling,no
+C138,RYD-0645,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C139,RYD-0667,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C140,RYD-0668,B03,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C141,RYD-0671,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C142,RYD-0672,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C143,RYD-0685,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C144,RYD-0687,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C145,RYD-0703,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C146,RYD-0704,B02,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C147,RYD-0706,B01,severity,LM,HIGH,,"relabel in Roboflow (khota-reviewed, sd-done)",severity changed in relabelling,no
+C148,RYD-0706,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C149,RYD-0711,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C150,RYD-0711,B02,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C151,RYD-0712,B02,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C152,RYD-0712,B03,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C153,RYD-0714,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C154,RYD-0716,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C155,RYD-0717,B02,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no
+C156,RYD-0718,B02,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C157,RYD-0719,B01,delete,SD HIGH,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C158,RYD-0719,B02,add,,SD HIGH,,"relabel in Roboflow (khota-reviewed, sd-done)",box added in relabelling,no
+C159,RYD-0731,B02,delete,SD LM,,,"relabel in Roboflow (khota-reviewed, sd-done)",box removed in relabelling,no
+C160,RYD-0733,B01,geometry,,,,"relabel in Roboflow (khota-reviewed, sd-done)",box redrawn in relabelling,no

@@ -1,0 +1,92 @@
+[
+ {
+  "image_id": "RYD-0617",
+  "cat": "TP",
+  "det": 0,
+  "gt": 0,
+  "iou": 0.941194611188621,
+  "title": "Curb Ramp, Low–Medium: correct",
+  "cause": "Why it works: a whole ramp, seen in good light. Box, type and severity all match the label (IoU 0.94)."
+ },
+ {
+  "image_id": "RYD-0035",
+  "cat": "TP",
+  "det": 0,
+  "gt": 0,
+  "iou": 0.8111931345141314,
+  "title": "Surface Damage, High: correct",
+  "cause": "Why it works: large, distinctive damage (broken curb corner with an open cavity), rated High as the rubric requires."
+ },
+ {
+  "image_id": "RYD-0164",
+  "cat": "FP",
+  "det": 1,
+  "gt": null,
+  "iou": 0.05565911741337498,
+  "title": "Surface Damage: false positive",
+  "cause": "Likely cause: incomplete labels. A small chip at a curb joint; the same kind of chip elsewhere in this photo is labelled, this one is not. The detection is probably right."
+ },
+ {
+  "image_id": "RYD-0560",
+  "cat": "FP",
+  "det": 0,
+  "gt": null,
+  "iou": 0.0,
+  "title": "Curb Ramp: false positive",
+  "cause": "Likely cause: look-alike. An intact concrete ramp in front of a shop door. Only ramps with an issue are labelled, and an intact ramp looks much the same."
+ },
+ {
+  "image_id": "RYD-0036",
+  "cat": "FN",
+  "det": null,
+  "gt": 0,
+  "iou": 0.0,
+  "title": "Surface Damage, High: missed",
+  "cause": "Likely cause: a large area of missing tiles whose exposed base looks like an even dark surface, inside a wide label box. Major damage like this is rare in training."
+ },
+ {
+  "image_id": "RYD-0612",
+  "cat": "FN",
+  "det": null,
+  "gt": 0,
+  "iou": 0.0,
+  "title": "Curb Ramp, Low–Medium: missed",
+  "cause": "Likely cause: unusual view. The ramp is photographed from very close and fills most of the frame; training ramps are mostly seen whole, from a distance."
+ },
+ {
+  "image_id": "RYD-0559",
+  "cat": "LOC",
+  "det": 0,
+  "gt": 0,
+  "iou": 0.39620364475917236,
+  "title": "Curb Ramp: box too small (IoU 0.40)",
+  "cause": "Likely cause: box extent. The detection covers the damaged ramp, the label also its surroundings. Right defect, but IoU below 0.5 counts as an error."
+ },
+ {
+  "image_id": "RYD-0082",
+  "cat": "LOC",
+  "det": 0,
+  "gt": 1,
+  "iou": 0.15988340029830284,
+  "title": "Surface Damage: other extent (IoU 0.16)",
+  "cause": "Likely cause: box extent. The label marks only the chipped paver edge, the detection the whole damaged paver. The labels draw such damage both ways."
+ },
+ {
+  "image_id": "RYD-0167",
+  "cat": "SEV",
+  "det": 0,
+  "gt": 0,
+  "iou": 0.5886367828930978,
+  "title": "High rated Low–Medium (P(High) 0.03)",
+  "cause": "Likely cause: few examples of this kind. A broken curb end seen from the side; the crop is mostly intact curb and road, and the training data has 142 High crops in all."
+ },
+ {
+  "image_id": "RYD-0466",
+  "cat": "SEV",
+  "det": 0,
+  "gt": 0,
+  "iou": 0.639319618831444,
+  "title": "Low–Medium rated High (P(High) 0.52)",
+  "cause": "Likely cause: the deliberately low High threshold (0.29). It catches 81% of High defects on validation, at the cost of some uneven Low–Medium surfaces rated High."
+ }
+]

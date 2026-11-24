@@ -1,0 +1,262 @@
+{
+  "split": "test",
+  "pipeline": {
+    "det_conf": 0.12,
+    "high_threshold": 0.29,
+    "imgsz": 640,
+    "iou": 0.6,
+    "tta": true,
+    "det_input_max": 1280,
+    "classifiers": [
+      "classifier_1.pt",
+      "classifier_2.pt",
+      "classifier_3.pt",
+      "classifier_4.pt",
+      "classifier_5.pt",
+      "classifier_6.pt"
+    ],
+    "detectors": [
+      "detector_1.pt",
+      "detector_2.pt",
+      "detector_3.pt",
+      "detector_4.pt",
+      "detector_5.pt",
+      "detector_6.pt",
+      "detector_7.pt"
+    ],
+    "wbf_iou": 0.55,
+    "member_conf": 0.001,
+    "source": {
+      "detector_runs": [
+        "detector_v2/y26s640_s42",
+        "detector_v2/y26s640_s43",
+        "detector_v2/y26s640_s44",
+        "detector_v2/v8n640_s42",
+        "detector_v2/v8n640_s43",
+        "detector_v2/v8n640_s44",
+        "detector_v2/y26m640_s42"
+      ],
+      "detector_models": [
+        "yolo26s.pt",
+        "yolo26s.pt",
+        "yolo26s.pt",
+        "yolov8n.pt",
+        "yolov8n.pt",
+        "yolov8n.pt",
+        "yolo26m.pt"
+      ],
+      "classifier_runs": [
+        "r18_balanced_s42",
+        "r18_balanced_s43",
+        "r18_balanced_s44",
+        "r18_default_s42",
+        "r18_default_s43",
+        "r18_default_s44"
+      ]
+    }
+  },
+  "detector_ap_by_iou": {
+    "Curb Ramp Issue": {
+      "n_labels": 23,
+      "AP@0.1": 0.675028062027612,
+      "max_recall@0.1": 0.9565217391304348,
+      "AP@0.3": 0.6419280558664111,
+      "max_recall@0.3": 0.9565217391304348,
+      "AP@0.5": 0.6101560010900993,
+      "max_recall@0.5": 0.9130434782608695
+    },
+    "Surface Damage": {
+      "n_labels": 134,
+      "AP@0.1": 0.36949160917116264,
+      "max_recall@0.1": 0.9701492537313433,
+      "AP@0.3": 0.2455582508814248,
+      "max_recall@0.3": 0.9402985074626866,
+      "AP@0.5": 0.1677348723043149,
+      "max_recall@0.5": 0.7910447761194029
+    }
+  },
+  "detector": {
+    "split": "test",
+    "metric": "WBF ensemble of 7 detectors, own AP code",
+    "overall": {
+      "mAP50": 0.3889454366972071
+    },
+    "per_class": {
+      "Curb Ramp Issue": {
+        "mAP50": 0.6101560010900993,
+        "precision": 0.5909090909090909,
+        "recall": 0.5652173913043478,
+        "f1": 0.5777777777777778
+      },
+      "Surface Damage": {
+        "mAP50": 0.1677348723043149,
+        "precision": 0.3888888888888889,
+        "recall": 0.1044776119402985,
+        "f1": 0.16470588235294117
+      }
+    },
+    "at_deployed_conf": {
+      "conf": 0.12,
+      "mean_f1": 0.3712418300653595
+    }
+  },
+  "classifier": {
+    "at_threshold": {
+      "accuracy": 0.8535031847133758,
+      "macro_f1": 0.7534985323230254,
+      "f1_lm": 0.9105058365758755,
+      "f1_high": 0.5964912280701754,
+      "high_recall": 0.7083333333333334,
+      "high_precision": 0.5151515151515151,
+      "confusion_matrix": [
+        [
+          117,
+          16
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "threshold": 0.29,
+      "n": 157,
+      "n_high": 24
+    },
+    "at_0.5": {
+      "accuracy": 0.9044585987261147,
+      "macro_f1": 0.8123356442744442,
+      "f1_lm": 0.9438202247191011,
+      "f1_high": 0.6808510638297872,
+      "high_recall": 0.6666666666666666,
+      "high_precision": 0.6956521739130435,
+      "confusion_matrix": [
+        [
+          126,
+          7
+        ],
+        [
+          8,
+          16
+        ]
+      ],
+      "threshold": 0.5,
+      "n": 157,
+      "n_high": 24
+    },
+    "majority_baseline": {
+      "accuracy": 0.8471337579617835,
+      "macro_f1": 0.4586206896551724,
+      "f1_lm": 0.9172413793103448,
+      "f1_high": 0.0,
+      "high_recall": 0.0,
+      "high_precision": 0.0,
+      "confusion_matrix": [
+        [
+          133,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "threshold": 0.5,
+      "n": 157,
+      "n_high": 24
+    },
+    "n": 157,
+    "n_high": 24
+  },
+  "end_to_end": {
+    "images": 103,
+    "labelled_boxes": 157,
+    "detections": 60,
+    "detections_matching_a_label_iou50": 29,
+    "severity_accuracy_on_matched": 0.8620689655172413,
+    "severity_metrics_on_matched": {
+      "accuracy": 0.8620689655172413,
+      "macro_f1": 0.8116883116883117,
+      "f1_lm": 0.9090909090909091,
+      "f1_high": 0.7142857142857143,
+      "high_recall": 0.7142857142857143,
+      "high_precision": 0.7142857142857143,
+      "confusion_matrix": [
+        [
+          20,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "threshold": 0.29,
+      "n": 29,
+      "n_high": 7
+    },
+    "photo_level": {
+      "photos_with_defect": 71,
+      "flagged": 40,
+      "photos_without_defect": 32,
+      "false_alarm": 3,
+      "flag_rate_on_defect_photos": 0.5633802816901409,
+      "false_alarm_rate_on_no_defect_photos": 0.09375
+    },
+    "localisation_tolerant_at_deployed_conf": {
+      "Curb Ramp Issue": {
+        "IoU>=0.1": {
+          "recall": 0.6521739130434783,
+          "precision": 0.7391304347826086
+        },
+        "IoU>=0.3": {
+          "recall": 0.6521739130434783,
+          "precision": 0.7391304347826086
+        },
+        "IoU>=0.5": {
+          "recall": 0.6086956521739131,
+          "precision": 0.6521739130434783
+        }
+      },
+      "Surface Damage": {
+        "IoU>=0.1": {
+          "recall": 0.15671641791044777,
+          "precision": 0.5945945945945946
+        },
+        "IoU>=0.3": {
+          "recall": 0.13432835820895522,
+          "precision": 0.5135135135135135
+        },
+        "IoU>=0.5": {
+          "recall": 0.11194029850746269,
+          "precision": 0.40540540540540543
+        }
+      }
+    },
+    "detector_recall_by_severity_at_deployed_conf": {
+      "Curb Ramp Issue / HIGH": {
+        "IoU>=0.1": 0.4,
+        "IoU>=0.3": 0.4,
+        "IoU>=0.5": 0.4,
+        "n": 5
+      },
+      "Curb Ramp Issue / LM": {
+        "IoU>=0.1": 0.7222222222222222,
+        "IoU>=0.3": 0.7222222222222222,
+        "IoU>=0.5": 0.6666666666666666,
+        "n": 18
+      },
+      "Surface Damage / HIGH": {
+        "IoU>=0.1": 0.42105263157894735,
+        "IoU>=0.3": 0.3684210526315789,
+        "IoU>=0.5": 0.2631578947368421,
+        "n": 19
+      },
+      "Surface Damage / LM": {
+        "IoU>=0.1": 0.11304347826086956,
+        "IoU>=0.3": 0.09565217391304348,
+        "IoU>=0.5": 0.08695652173913043,
+        "n": 115
+      }
+    }
+  }
+}

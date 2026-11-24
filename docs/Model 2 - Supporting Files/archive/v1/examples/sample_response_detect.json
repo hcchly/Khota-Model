@@ -1,0 +1,47 @@
+{
+  "image": "sample_photo.jpg",
+  "model_version": "v1-2026-11-21",
+  "width": 2268,
+  "height": 4032,
+  "result": "Defects found",
+  "defects": [
+    {
+      "box_xyxy": [
+        1324.0,
+        1939.7,
+        1733.7,
+        2304.5
+      ],
+      "box_xywhn": [
+        0.674098,
+        0.526311,
+        0.180622,
+        0.09047
+      ],
+      "class_id": 0,
+      "class": "Curb Ramp Issue",
+      "confidence": 0.3129
+    },
+    {
+      "box_xyxy": [
+        497.4,
+        2190.9,
+        719.0,
+        2475.7
+      ],
+      "box_xywhn": [
+        0.26817,
+        0.578704,
+        0.097734,
+        0.070628
+      ],
+      "class_id": 1,
+      "class": "Surface Damage",
+      "confidence": 0.2377
+    }
+  ],
+  "thresholds": {
+    "detection_conf": 0.12
+  },
+  "processing_ms": 278
+}
