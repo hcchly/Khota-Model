@@ -28,7 +28,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 sys.path[:0] = [str(ROOT / d / "scripts") for d in ("detection", "severity", "evaluation")]
 from khota.classifier import CropDataset, eval_transform, metrics_binary  # noqa: E402
 from khota.pipeline import KhotaPipeline  # noqa: E402
@@ -75,7 +75,7 @@ def iou(a, b):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default=str(ROOT / "inference" / "weights"))
+    ap.add_argument("--weights", default=str(ROOT.parent / "Model 2" / "inference" / "weights"))
     ap.add_argument("--split", default="test")
     ap.add_argument("--data", default=str(ROOT / "data" / "yolo" / "khota.yaml"))
     ap.add_argument("--crops", default=str(ROOT / "data" / "crops"))

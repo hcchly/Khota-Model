@@ -26,14 +26,14 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 sys.path[:0] = [str(ROOT / d / "scripts") for d in ("detection", "severity", "evaluation")]
 from evaluate import classifier_probs  # noqa: E402
 from khota.classifier import metrics_binary  # noqa: E402
 from khota.crops import crop_defect  # noqa: E402
 from khota.pipeline import KhotaPipeline, load_image  # noqa: E402
 
-SEV_T = [0.05, 0.10, 0.15, 0.20, 0.25, 0.29, 0.35, 0.40, 0.50]   # requester grid + 0.05 / 0.10 to locate 90% recall
+SEV_T = [0.05, 0.10, 0.15, 0.20, 0.25, 0.29, 0.35, 0.40, 0.50]   # initial grid + 0.05 / 0.10 to locate 90% recall
 DET_T = [0.05, 0.08, 0.10, 0.12, 0.15, 0.20]
 E2E_SEV = [0.05, 0.10, 0.15, 0.20, 0.25, 0.29, 0.35, 0.40, 0.50]
 NAMES = {0: "Curb Ramp", 1: "Surface Damage"}
@@ -105,7 +105,7 @@ def match(photos, t, iou_thr):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", required=True, choices=["val", "test"])
-    ap.add_argument("--weights", default=str(ROOT / "inference" / "weights"))
+    ap.add_argument("--weights", default=str(ROOT.parent / "Model 2" / "inference" / "weights"))
     a = ap.parse_args()
     out = ROOT / "results" / "thresholds"
     out.mkdir(parents=True, exist_ok=True)

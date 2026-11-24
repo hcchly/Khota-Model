@@ -22,7 +22,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path[:0] = [str(ROOT / d / "scripts") for d in ("detection", "severity", "evaluation")]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from ap_by_iou import ap_table  # noqa: E402
 from khota.ensemble import wbf  # noqa: E402
 from pred_cache import load  # noqa: E402

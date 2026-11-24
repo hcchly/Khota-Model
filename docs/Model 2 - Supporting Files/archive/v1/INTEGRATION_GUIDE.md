@@ -1,7 +1,7 @@
 # Khota model — app integration guide
 
 Model version **v1-2026-11-21**. This package contains everything needed to run the Khota sidewalk-defect model as a
-service for the app: the code, every model file, an HTTP API, a command-line tool and API examples.
+service for the app: the inference code, an HTTP API, a command-line tool and API examples. The weight files are distributed separately.
 
 The model can be used in three ways, all from the same files:
 
@@ -62,7 +62,8 @@ python -m venv .venv
 .venv\Scripts\activate                 # Linux/macOS: source .venv/bin/activate
 # PyTorch first, ONE of:
 pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124   # NVIDIA GPU
-pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu     # CPU only
+pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu     # Linux/Windows CPU wheels
+# macOS: pip install torch==2.6.0 torchvision==0.21.0
 pip install -r requirements.txt
 ```
 

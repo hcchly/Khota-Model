@@ -2,7 +2,7 @@
 pred_cache format so detection/scripts/ens_eval.py can score it alone and inside the WBF ensemble.
 
 Data: YOLO format with data.yaml (data/yolo3 = Surface Damage split into LM / HIGH sub-classes; merged back to the
-two requester classes through the "<type>|<sub-class>" class names, exactly like the YOLO sub-class models).
+two project classes through the "<type>|<sub-class>" class names, exactly like the YOLO sub-class models).
 
 Usage: python detection/scripts/train_rfdetr.py --size medium --name med_c3_s42 [--epochs 40] [--predict-only]
 """
@@ -16,7 +16,7 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from khota.ensemble import TYPES, merge_subclasses  # noqa: E402
 
 

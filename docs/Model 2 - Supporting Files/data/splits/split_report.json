@@ -8,7 +8,7 @@
     "min_cross_split_distance_m": 201.2,
     "note": "frozen location split (data/splits/split.csv); photos within link_m metres of each other are always in the same split"
   },
-  "labels": "final labels (data/annotations/boxes_final.csv): requester labels + all 160 logged changes, 22 Nov 2026",
+  "labels": "final labels (data/annotations/boxes_final.csv): original labels + all 160 logged changes, 22 Nov 2026",
   "per_split": {
     "train": {
       "photos": 482,
@@ -114,7 +114,7 @@
   "label_versions": {
     "final_2026-11-22": "per_split above (160 logged changes)",
     "reviewed_2026-11-18": {
-      "note": "requester labels + the first 111 logged changes; the final labels with the 49 relabelling changes of 22 Nov undone",
+      "note": "original labels + the first 111 logged changes; the final labels with the 49 relabelling changes of 22 Nov undone",
       "per_split": {
         "train": {
           "photos": 482,

@@ -27,7 +27,7 @@ import torch
 from ultralytics import YOLO
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 sys.path[:0] = [str(ROOT / d / "scripts") for d in ("detection", "severity", "evaluation")]
 from khota.classifier import CropDataset, eval_transform, metrics_binary  # noqa: E402
 from select_classifier import operating_points, probs  # noqa: E402
@@ -97,7 +97,7 @@ def main():
     ap.add_argument("--seeds", nargs="+", type=int, default=[42, 43, 44])
     ap.add_argument("--min-recall", type=float, default=0.8)
     ap.add_argument("--fixed-threshold", type=float, help="use this High threshold instead of the validation rule "
-                                                            "(e.g. 0.5 = the requester's default argmax)")
+                                                            "(e.g. 0.5 = the team's default argmax)")
     ap.add_argument("--crops", default=str(ROOT / "data" / "crops"))
     ap.add_argument("--det-runs", nargs="*", default=[])
     ap.add_argument("--data", default=str(ROOT / "data" / "yolo" / "khota.yaml"))

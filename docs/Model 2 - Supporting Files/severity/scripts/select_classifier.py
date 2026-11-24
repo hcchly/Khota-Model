@@ -19,7 +19,7 @@ import torch
 from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from khota.classifier import CropDataset, build_model, eval_transform, metrics_binary  # noqa: E402
 
 GRID = np.round(np.linspace(0.05, 0.95, 91), 2)

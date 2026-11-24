@@ -1,6 +1,6 @@
 # Model files — v2-2026-11-22
 
-The model files (526 MB) are included in this folder alongside `pipeline.json`.
+Place the 14 v2 checkpoints (526 MB) in this folder alongside `pipeline.json`. The repository ignores checkpoint binaries. Verify the files against the supplied manifest before running inference.
 
 | file | model | MB |
 |---|---|---|
@@ -19,6 +19,6 @@ The model files (526 MB) are included in this folder alongside `pipeline.json`.
 | `detector_7.pt` | YOLO26-m detector, 640 px, seed 42 | 44.0 |
 | `detector_8.pth` | RF-DETR Medium detector, 576 px, Surface Damage sub-classes; mirror pass, weight 4 in the fusion | 133.8 |
 
-Check the files against `SHA256SUMS`: `sha256sum -c SHA256SUMS` in this folder (Linux / macOS), or `certutil -hashfile <file> SHA256` (Windows).
+Check the files against `SHA256SUMS`: `sha256sum -c SHA256SUMS` on Linux or `shasum -a 256 -c SHA256SUMS` on macOS, run from this folder, or `certutil -hashfile <file> SHA256` (Windows).
 
 `pipeline.json` lists these files and holds every threshold; the code reads everything from it.

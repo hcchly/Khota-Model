@@ -23,7 +23,7 @@ import torch.nn.functional as F
 from sklearn.metrics import average_precision_score, roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from khota.classifier import (CropDataset, best_threshold, build_model, eval_transform,  # noqa: E402
                               metrics_binary, train_transform)
 

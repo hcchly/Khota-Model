@@ -2,7 +2,7 @@
 # 1) PyTorch first:
 #    pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
 # 2) Then: pip install -r requirements.txt
-# The app server needs less: inference/requirements.txt
+# App inference has its own requirements: ../Model 2/inference/requirements.txt
 ultralytics==8.4.84
 rfdetr[train]==1.12.1
 numpy==2.4.6

@@ -1,4 +1,4 @@
-change_id,image_id,box,type,old,new,rubric_codes,source,note,provider_to_confirm
+change_id,image_id,box,type,old,new,rubric_codes,source,note,review_needed
 C001,RYD-0067,B08,delete,SD LM,deleted,,box review,"thin box on a tile joint, no defect",no
 C002,RYD-0099,B03,delete,SD LM,deleted,,box review,"box on intact paving, no visible defect",no
 C003,RYD-0228,B01,delete,SD HIGH,deleted,,box review,"sandy road median, not a sidewalk surface",no
@@ -95,7 +95,7 @@ C093,RYD-0248,B01,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"paver disl
 C094,RYD-0263,B01,severity,LM,HIGH,SD-H1,rubric review (clear),interlocking pavers along the diagonal edging strip are displaced/missing with sand bedding clearly exposed in open gaps (around x 0.31-0.40 and 0.55-0.70); left third of the box is sound paving but t,yes
 C095,RYD-0266,B01,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"several pavers missing/broken and displaced, sand/soil bedding exposed over a large area in the centre of the box; open gaps and fragments. Consistent with RYD-0267 B01 (HIGH), likely the same locatio",yes
 C096,RYD-0266,B02,severity,LM,HIGH,SD-H1;SD-H2,rubric review (clear),"crushed paver fragments lying loose in exposed soil; paving clearly missing, so it no longer holds together",yes
-C097,RYD-0275,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"lower part of the tiled sloped surface is broken off, tiles clearly missing, soil and rubble exposed across most of the width. I kept the requester's CR class; if this surface is treated as sidewalk the ",yes
+C097,RYD-0275,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"lower part of the tiled sloped surface is broken off, tiles clearly missing, soil and rubble exposed across most of the width. I kept the team's CR class; if this surface is treated as sidewalk the ",yes
 C098,RYD-0319,B01,severity,LM,HIGH,SD-H1,rubric review (clear),"paver piece missing next to the planter border, open gap with soil/bedding exposed and loose broken fragments in it",yes
 C099,RYD-0408,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"sloped concrete ramp between tiled sidewalk and unpaved road: lower edge broken with undercut, abrupt exposed edge; central section missing with soil/debris-filled cavity; right part fragmented. Match",yes
 C100,RYD-0409,B01,severity,LM,HIGH,CR-H1,rubric review (clear),"same ramp as RYD-0408 B01: broken lower edge with undercut gap / abrupt exposed edge; left part fragmented with missing pieces and debris. Propose HIGH, consistent with RYD-0408/0411",yes

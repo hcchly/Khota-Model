@@ -1,4 +1,4 @@
-// Minimal Flutter client for the Khota API (package:http).
+// Minimal Flutter example for the Khota API (package:http).
 // pubspec.yaml:  dependencies: http: ^1.2.0
 import 'dart:convert';
 import 'package:http/http.dart' as http;

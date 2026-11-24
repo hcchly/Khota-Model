@@ -3,8 +3,8 @@
 The split itself (data/splits/split.csv) is frozen and is not changed here; only the counts are recomputed.
 
 Label versions
-  final      data/annotations/boxes_final.csv: requester labels + all 160 logged changes (22 Nov 2026)
-  reviewed   the labels of 18 Nov 2026 (requester labels + the first 111 changes), reconstructed exactly from the final
+  final      data/annotations/boxes_final.csv: original labels + all 160 logged changes (22 Nov 2026)
+  reviewed   the labels of 18 Nov 2026 (original labels + the first 111 changes), reconstructed exactly from the final
              labels by undoing the 49 Surface Damage relabelling changes in data/annotations/change_log.csv
   original   the labels as delivered (counts from the first split report, 15 Nov 2026)
 
@@ -106,11 +106,11 @@ def main():
     report = {
         "split_method": method | {"note": "frozen location split (data/splits/split.csv); photos within link_m metres "
                                           "of each other are always in the same split"},
-        "labels": "final labels (data/annotations/boxes_final.csv): requester labels + all 160 logged changes, 22 Nov 2026",
+        "labels": "final labels (data/annotations/boxes_final.csv): original labels + all 160 logged changes, 22 Nov 2026",
         "per_split": counts(fin_boxes, fin_photos, split, groups),
         "label_versions": {
             "final_2026-11-22": "per_split above (160 logged changes)",
-            "reviewed_2026-11-18": {"note": "requester labels + the first 111 logged changes; the final labels with the 49 "
+            "reviewed_2026-11-18": {"note": "original labels + the first 111 logged changes; the final labels with the 49 "
                                             "relabelling changes of 22 Nov undone",
                                     "per_split": counts(rev, rev_photos, split, groups)},
             "original_as_delivered": {"note": "labels as delivered (first split report, 15 Nov 2026)",

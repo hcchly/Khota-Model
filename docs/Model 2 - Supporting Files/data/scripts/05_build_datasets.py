@@ -35,7 +35,7 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from khota.crops import expand_box_xyxy, yolo_to_xyxy  # noqa: E402
 
 RAW = ROOT / "data" / "raw"

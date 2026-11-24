@@ -21,7 +21,7 @@ from pathlib import Path
 import psutil
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 
 
 def cpu_name() -> str:
@@ -50,7 +50,7 @@ def peak_mb(p: psutil.Process) -> float:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default=str(ROOT / "inference" / "weights"))
+    ap.add_argument("--weights", default=str(ROOT.parent / "Model 2" / "inference" / "weights"))
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--n", type=int, default=20)
     ap.add_argument("--threads", type=int)

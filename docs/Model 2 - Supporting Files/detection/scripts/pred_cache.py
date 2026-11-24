@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 from khota.ensemble import class_map, merge_subclasses  # noqa: E402
 
 CACHE = ROOT / "runs" / "pred_cache"

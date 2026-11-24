@@ -1,6 +1,6 @@
 # Model files — v1-2026-11-21
 
-The model files (392 MB) are not stored in git. Download **`khota_weights_v1-2026-11-21.zip`** (363 MB) from the repository's **Releases** page (release `v1-2026-11-21`) or from the shared Drive folder, and unzip it in the repository root; it puts the files below into `archive/v1/weights/`, next to `pipeline.json`.
+The model files (392 MB) are not stored in git. Download **`khota_weights_v1-2026-11-21.zip`** (363 MB) from the repository's **Releases** page (release `v1-2026-11-21`) or from the shared Drive folder, and extract it from the Model 2 supporting-files directory so the checkpoints end up here, next to `pipeline.json`.
 
 ```bash
 unzip khota_weights_v1-2026-11-21.zip        # Windows: tar -xf khota_weights_v1-2026-11-21.zip
@@ -22,6 +22,6 @@ unzip khota_weights_v1-2026-11-21.zip        # Windows: tar -xf khota_weights_v1
 | `detector_6.pt` | YOLOv8n detector, seed 44 | 6.2 |
 | `detector_7.pt` | YOLO26-m detector, seed 42 | 44.0 |
 
-Check the download against `SHA256SUMS`: `sha256sum -c SHA256SUMS` in this folder (Linux / macOS), or `certutil -hashfile <file> SHA256` (Windows).
+Check the download against `SHA256SUMS`: `sha256sum -c SHA256SUMS` on Linux or `shasum -a 256 -c SHA256SUMS` on macOS, run from this folder, or `certutil -hashfile <file> SHA256` (Windows).
 
 `pipeline.json` (in git) lists these files and holds every threshold; the code reads everything from it.

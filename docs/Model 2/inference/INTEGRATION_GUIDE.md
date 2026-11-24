@@ -1,7 +1,7 @@
 # Khota model — app integration guide
 
 Model version **v2-2026-11-22**. This package contains everything needed to run the Khota sidewalk-defect model as a
-service for the app: the code, every model file, an HTTP API, a command-line tool and client examples.
+service for the app: the inference code, an HTTP API, a command-line tool and API examples. The weight files are distributed separately.
 
 The model can be used in three ways, all from the same files:
 
@@ -49,7 +49,7 @@ The two stages are also usable on their own:
 | `weights/` | `detector_1..7.pt` (YOLO), `detector_8.pth` (RF-DETR), `classifier_1..6.pt`, `pipeline.json` (thresholds, file list, model version) |
 | `predict.py` | command-line tool |
 | `requirements.txt` | dependencies |
-| `examples/` | `sample_photo.jpg` and its real responses (`sample_response.json` for `/predict`, `sample_response_detect.json`, `sample_response_severity.json`), `python_client.py`, `flutter_client.dart` |
+| `examples/` | `sample_photo.jpg` and its real responses (`sample_response.json` for `/predict`, `sample_response_detect.json`, `sample_response_severity.json`), `python_api_example.py`, `flutter_api_example.dart` |
 
 All weights for this package are included in `weights/`. See `weights/README.md` for the file list and checksum instructions.
 
@@ -66,7 +66,8 @@ python -m venv .venv
 .venv\Scripts\activate                 # Linux/macOS: source .venv/bin/activate
 # PyTorch first, ONE of:
 pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124   # NVIDIA GPU
-pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu     # CPU only
+pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu     # Linux/Windows CPU wheels
+# macOS: pip install torch==2.6.0 torchvision==0.21.0
 pip install -r requirements.txt
 ```
 
@@ -426,11 +427,11 @@ curl -F "image=@photo.jpg" -F 'boxes=[[215.4, 1914.6, 575.0, 2116.2], [2704.5, 1
 `mode` is `"photo+boxes"` or `"crop"`. A malformed `boxes` value, or a box outside the photo, returns `400` with
 the reason.
 
-## 6. Client examples
+## 6. API examples
 
-* **Flutter:** `examples/flutter_client.dart`. It uses the `http` package to send the photo as multipart field
+* **Flutter:** `examples/flutter_api_example.dart`. It uses the `http` package to send the photo as multipart field
   `image`, and shows how to scale the boxes.
-* **Python:** `examples/python_client.py`.
+* **Python:** `examples/python_api_example.py`.
 * **Python without the HTTP API:**
 
 ```python

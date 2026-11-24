@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from PIL import Image, ImageDraw, ImageFont, ImageOps  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "inference"))
+sys.path.insert(0, str(ROOT.parent / "Model 2" / "inference"))
 sys.path[:0] = [str(ROOT / d / "scripts") for d in ("detection", "severity", "evaluation")]
 from ap_by_iou import NAMES, _ap, _iou, ap_table  # noqa: E402
 from detector_ensemble_val import load_gts  # noqa: E402
@@ -337,7 +337,7 @@ def render(selection: Path, recs, out_dir: Path):
 # ------------------------------------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default=str(ROOT / "inference" / "weights"))
+    ap.add_argument("--weights", default=str(ROOT.parent / "Model 2" / "inference" / "weights"))
     ap.add_argument("--split", default="val")
     ap.add_argument("--out")
     ap.add_argument("--examples", action="store_true", help="also run the full pipeline on the original photos")

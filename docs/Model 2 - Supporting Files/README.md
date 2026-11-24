@@ -25,7 +25,7 @@ Validation split (104 photos at locations not used for training), final labels:
 
 Test split (103 photos), scored once per delivered version:
 
-* **v2: mAP@0.5 0.375** (Curb Ramp 0.557, Surface Damage 0.193); severity Macro-F1 0.761, High recall 0.708, accuracy 0.859; end to end 89% of the photos with a defect flagged, 22% false alarms on photos without one ([`results/test_metrics_v2.json`](results/test_metrics_v2.json)).
+* **v2: mAP@0.5 0.375** (Curb Ramp 0.557, Surface Damage 0.193); severity Macro-F1 0.761, High recall 0.708, accuracy 0.859; end to end 89% of the photos with a defect flagged, 22% false alarms on photos without one ([`results/test_metrics_v2.json`](../Model%202/results/test_metrics_v2.json)).
 * v1: mAP@0.5 0.389 (Curb Ramp 0.610, Surface Damage 0.168); severity Macro-F1 0.753, High recall 0.708 ([`archive/v1/results`](archive/v1/results)).
 
 On test, v2 improves Surface Damage (0.168 → 0.193) but not Curb Ramp (0.610 → 0.557), so the validation gain does not carry over as a whole. v1 was scored before the last relabelling (3 test boxes differ).
@@ -34,27 +34,29 @@ Full report: [`docs/Khota_Project_Report.pdf`](docs/Khota_Project_Report.pdf) (a
 
 ## Use the model (app integration)
 
+From this supporting-files directory, use the sibling Model 2 inference package. The CUDA installation below is for NVIDIA GPUs. See the integration guide for CPU and macOS installation.
+
 ```bash
-pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124   # or the CPU wheels
-pip install -r inference/requirements.txt
-unzip khota_weights_v2-2026-11-22.zip     # model files (Releases page); Windows: tar -xf khota_weights_v2-2026-11-22.zip
-cd inference
+pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124   # NVIDIA CUDA wheels
+cd "../Model 2/inference"
+pip install -r requirements.txt
+# Place the v2 checkpoints in weights/ and verify them before running.
 python predict.py examples/sample_photo.jpg                     # one photo -> JSON
 python -m uvicorn khota.api:app --host 0.0.0.0 --port 8000      # HTTP API for the app
 ```
 
-The model files are not in git: see [`inference/weights/README.md`](inference/weights/README.md). The API, the response format, the Python / Flutter API examples and how to update the model: [`inference/INTEGRATION_GUIDE.md`](inference/INTEGRATION_GUIDE.md).
+The model files are not in git: see [`inference/weights/README.md`](../Model%202/inference/weights/README.md). The API, the response format, the Python / Flutter API examples and how to update the model: [`inference/INTEGRATION_GUIDE.md`](../Model%202/inference/INTEGRATION_GUIDE.md).
 
 **Speed and memory** (full v2 pipeline on original photos, [`results/benchmark_v2_cpu.json`](results/benchmark_v2_cpu.json)):
 
 * CPU only (11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz): 1.8 s per photo (median), peak RAM 1.7 GB
 * GPU (NVIDIA GeForce RTX 3070 Laptop GPU): 0.6 s per photo (median), peak RAM 2.0 GB
 
-**Licenses:** [`docs/LICENSES.md`](docs/LICENSES.md). The YOLO detectors run on Ultralytics, which is AGPL-3.0; RF-DETR is Apache-2.0.
+**Licenses:** [`docs/LICENSES.md`](../Model%202/docs/LICENSES.md). The YOLO detectors run on Ultralytics, which is AGPL-3.0; RF-DETR is Apache-2.0.
 
 ## Reproduce the results
 
-Run everything from the repository root. Training needs an NVIDIA GPU (used: RTX 3070, 8 GB).
+Run the following commands from this supporting-files directory. Training needs an NVIDIA GPU (used: RTX 3070, 8 GB).
 
 ```bash
 pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
@@ -68,7 +70,7 @@ python data/scripts/05_build_datasets.py          # data/yolo (detector) + data/
 python data/scripts/12_build_yolo_subclasses.py   # data/yolo3 (RF-DETR)
 ```
 
-**2. Evaluate the delivered model** (model files in `inference/weights/`):
+**2. Evaluate the delivered model** (model files in the sibling Model 2 package at `../Model 2/inference/weights/`):
 
 ```bash
 python evaluation/scripts/evaluate.py --split val --out results/val_v2   # detection mAP, severity, end to end
@@ -112,13 +114,6 @@ python evaluation/scripts/export_weights.py \
 khota-model/
 ├── README.md
 ├── requirements.txt          training + evaluation environment
-├── inference/                deployable package (API, command line, app examples)
-│   ├── khota/                pipeline.py, api.py, ensemble.py, classifier.py, crops.py
-│   ├── predict.py
-│   ├── requirements.txt      inference only
-│   ├── INTEGRATION_GUIDE.md
-│   ├── examples/             sample_photo.jpg, sample responses, Python and Flutter API examples
-│   └── weights/              pipeline.json (v2-2026-11-22), SHA256SUMS, README.md (model-file download)
 ├── data/
 │   ├── README.md             how to get the photos and build the datasets
 │   ├── splits/               split.csv (frozen location split), split_report.json
@@ -133,7 +128,7 @@ khota-model/
 ├── evaluation/
 │   └── scripts/              end-to-end evaluation, threshold tables, model export
 ├── results/                  test + validation results, threshold tables, training runs, plots/, examples/
-├── docs/                     Khota_Project_Report.pdf, REPORT.md (same content), LICENSES.md
+├── docs/                     Khota_Project_Report.pdf, REPORT.md (same content)
 └── archive/
     └── v1/                   previous version (v1-2026-11-21), kept for reference
 ```
@@ -161,7 +156,7 @@ khota-model/
 | `evaluation/scripts/seed_replicates.py` | Seed-to-seed variation of the chosen recipes (mean ± std) |
 | `evaluation/scripts/summarize_runs.py` | Collects the validation metrics of every training run into one table |
 
-The inference code itself (box fusion, crops, severity, API) is in `inference/khota/`.
+The inference code is in the [sibling Model 2 package](../Model%202/inference/khota/).
 
 ## Notes
 
